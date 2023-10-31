@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Master_Page.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 452px;
+        }
+        .auto-style3 {
+            width: 100%;
+            height: 100%;
+        }
+        .auto-style4 {
+            width: 24%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+           
+            <table class="auto-style1">
+                <tr>
+                    <td>This is Header&nbsp;&nbsp;
+                        <asp:Label ID="MasterLabel" runat="server" Text="Label"></asp:Label>
+&nbsp;&nbsp;&nbsp;
+                        <asp:Button ID="MasterBtn" runat="server" OnClick="MasterBtn_Click" Text="Button" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">
+                        <table class="auto-style3">
+                            <tr>
+                                <td class="auto-style4" style="text-align: center;">Courses Offered<br />
+                                    <br />
+                                    <a href="WebForm1.aspx">WebForm1</a><br />
+                                    <a href="WebForm2.aspx">WebForm2</a><br />
+                                    <a href="WebForm3.aspx">WebForm3.aspx</a></td>
+                                    <td style="text-align: center">
+                                        <asp:ContentPlaceHolder ID="CourseDetails" runat="server">
+                                            Page under construction
+                                        </asp:ContentPlaceHolder>
+                                    </td>
+                            </tr>
+                        </table>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>This is Footer</tr>
+            </table>
+           
+        </div>
+    </form>
+</body>
+</html>

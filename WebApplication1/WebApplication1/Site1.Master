@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+
+        .auto-style2 {
+            height: 427px;
+        }
+
+        .auto-style3 {
+            width: 100%;
+            height: 100%;
+        }
+
+        .auto-style4 {
+            margin-left: 40px;
+        }
+
+        .auto-style5 {
+            width: 338px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style4">Header
+                        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">
+                        <table class="auto-style3">
+                            <tr>
+                                <td class="auto-style5">
+                                    <a href="/WebForm1.aspx">WebForm1.aspx</a><br />
+                                    <a href="<%=ResolveUrl("~/WebForm2.aspx")%>">WebForm2.aspx</a><br />
+                                    <a href="/page3/WebForm3.aspx">WebForm3.aspx</a></td>
+
+                                <td>Text<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                    <p>
+                                        default
+                                    </p>
+                                </asp:ContentPlaceHolder>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Footer</td>
+                </tr>
+            </table>
+
+        </div>
+    </form>
+</body>
+</html>

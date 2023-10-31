@@ -1,0 +1,11 @@
+﻿<asp:Button runat="server" 
+                    BackColor="#66FF99" 
+                    BorderStyle="Double"/>
+
+
+<asp:Button runat="server" 
+                    SkinID = "Red"
+                    BackColor="#000000" 
+                    BorderStyle="Double"
+                    />
+
